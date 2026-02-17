@@ -1,31 +1,32 @@
 class Bpwd < Formula
   desc "A better pwd"
   homepage "https://github.com/CodeTease/bpwd"
-  version "0.1.0"
+  version "0.2.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/CodeTease/bpwd/releases/download/v0.1.0/bpwd-aarch64-apple-darwin.tar.xz"
-      sha256 "23600f7dbf91981aacc4f0efe9746a514d3f0984f23583de2cae680568d5e886"
+      url "https://github.com/CodeTease/bpwd/releases/download/v0.2.0/bpwd-aarch64-apple-darwin.tar.xz"
+      sha256 "5c2162c347369f247473c16a6ad182def765c2f052130d11db1b2a10db7645ab"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/CodeTease/bpwd/releases/download/v0.1.0/bpwd-x86_64-apple-darwin.tar.xz"
-      sha256 "2b87260a61edce63dc31c348114962818696e74080f6edc1d16f29803ecabaf9"
+      url "https://github.com/CodeTease/bpwd/releases/download/v0.2.0/bpwd-x86_64-apple-darwin.tar.xz"
+      sha256 "2d14c24c76ef3695a0f3fb869f17210b28870d6915082152bad1bb0eab903f8a"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/CodeTease/bpwd/releases/download/v0.1.0/bpwd-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "f0aaf67af30c8be47a8a4a74ec1e9fc2c4ed868d174b4e401f64f3ae97494f85"
+      url "https://github.com/CodeTease/bpwd/releases/download/v0.2.0/bpwd-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "67b4dd8fab5482cd3f009ab50a724d82e4901ceca0a067fac1762e6ffb064738"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/CodeTease/bpwd/releases/download/v0.1.0/bpwd-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "cb508facc47f48a497bd5fa5a44b24089fd69978bbc04a95495bfdf3b028524d"
+      url "https://github.com/CodeTease/bpwd/releases/download/v0.2.0/bpwd-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "65b37e324e93065ff5b58ff4bfbd15413fcc0e06caf0a00dc1c776a52f62b711"
     end
   end
   license "MIT"
 
   BINARY_ALIASES = {
     "aarch64-apple-darwin":              {},
+    "aarch64-pc-windows-gnu":            {},
     "aarch64-unknown-linux-gnu":         {},
     "x86_64-apple-darwin":               {},
     "x86_64-pc-windows-gnu":             {},
