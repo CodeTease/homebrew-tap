@@ -1,25 +1,25 @@
 class Bpwd < Formula
   desc "A better pwd"
   homepage "https://github.com/CodeTease/bpwd"
-  version "0.2.1"
+  version "0.3.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/CodeTease/bpwd/releases/download/v0.2.1/bpwd-aarch64-apple-darwin.tar.xz"
-      sha256 "d481e30c787fbaab01c64d9fb4e9182f17fd85f245c22523c58c4442325de2f0"
+      url "https://github.com/CodeTease/bpwd/releases/download/v0.3.0/bpwd-aarch64-apple-darwin.tar.xz"
+      sha256 "7c8f56ae23b8601c283357fce2a3ff173bdefd8595215122ec756dd1ccf5ce55"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/CodeTease/bpwd/releases/download/v0.2.1/bpwd-x86_64-apple-darwin.tar.xz"
-      sha256 "a737e9f1a8502d76b0f2994d606bbb5f1438bd14531614477989fab35e82d050"
+      url "https://github.com/CodeTease/bpwd/releases/download/v0.3.0/bpwd-x86_64-apple-darwin.tar.xz"
+      sha256 "7e850d246d70010b2f86fb5200b627c7add6195db6593e7950101009d1364066"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/CodeTease/bpwd/releases/download/v0.2.1/bpwd-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "ec92cc4393011f09b8569d652b4e8ce0d30e1516b661010e5fbbd5f8920c6088"
+      url "https://github.com/CodeTease/bpwd/releases/download/v0.3.0/bpwd-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "ee45a5014a9ed0e1d96d7173c289a21a819fdb95800cd31e0e0f72d43adcbe73"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/CodeTease/bpwd/releases/download/v0.2.1/bpwd-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "f1b7ecf8b88968c883a0076200bcfb4dae1d79ed5b0e577f0497eddafb38e039"
+      url "https://github.com/CodeTease/bpwd/releases/download/v0.3.0/bpwd-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "2bf325ea571d201452ad348ac7bab61a3b7ce9a456fd60d5c321d0628cb3f8f8"
     end
   end
   license "MIT"
