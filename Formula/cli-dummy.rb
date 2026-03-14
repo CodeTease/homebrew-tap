@@ -1,24 +1,24 @@
 class CliDummy < Formula
   desc "A dummy CLI tool"
   homepage "https://github.com/CodeTease/cli-dummy"
-  version "0.4.0"
+  version "0.4.1"
   license "MIT"
 
   if OS.mac?
     if Hardware::CPU.intel?
-      url "https://github.com/CodeTease/cli-dummy/releases/download/v0.4.0/cli-dummy-0.4.0-x86_64-apple-darwin.tar.gz"
-      sha256 "bc46a18fc03945a88785c4c2ed078c604138dac3bad6450479b492a9be5e4461"
+      url "https://github.com/CodeTease/cli-dummy/releases/download/v0.4.1/cli-dummy-0.4.1-x86_64-apple-darwin.tar.gz"
+      sha256 "6ef0ee1a1500927be854eefddd82cb4979816e29fbc523eedf4a1bf7363a62b6"
     elsif Hardware::CPU.arm?
-      url "https://github.com/CodeTease/cli-dummy/releases/download/v0.4.0/cli-dummy-0.4.0-aarch64-apple-darwin.tar.gz"
-      sha256 "fd3370dd819049f72568d519d146760798c8932dad8614f65fc5a083f773ac82"
+      url "https://github.com/CodeTease/cli-dummy/releases/download/v0.4.1/cli-dummy-0.4.1-aarch64-apple-darwin.tar.gz"
+      sha256 "2de8096086c4777cd5e99ac894545c67bedfc3268cb281e60be9494de106e4f9"
     end
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/CodeTease/cli-dummy/releases/download/v0.4.0/cli-dummy-0.4.0-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "b1d0e9df4a840f121cdd27bddfc5366a6c2a362d1c0d39dd4f979de5ffff2e71"
+      url "https://github.com/CodeTease/cli-dummy/releases/download/v0.4.1/cli-dummy-0.4.1-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "8a2e542372d5ef79664674fc7f21ab9b1a35b0cf4a3c62f4163a2105d8403dbe"
     elsif Hardware::CPU.arm?
-      url "https://github.com/CodeTease/cli-dummy/releases/download/v0.4.0/cli-dummy-0.4.0-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "9df2c54fd6f045c55cfc1beb40fa8d9b391bfe772efb0d8351ea0693711e8006"
+      url "https://github.com/CodeTease/cli-dummy/releases/download/v0.4.1/cli-dummy-0.4.1-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "b4f859211258e6b8d68ab8cae5c6a209d8edc8e5c2f8c7bcaf43e53a5ce9e028"
     end
   end
 
