@@ -1,24 +1,24 @@
 class Zzz < Formula
   desc "A fancy sleep command written in Rust 💤"
   homepage "https://github.com/CodeTease/zzz"
-  version "0.1.0"
+  version "0.2.0"
   license "MIT"
 
   if OS.mac?
     if Hardware::CPU.intel?
-      url "https://github.com/CodeTease/zzz/releases/download/v0.1.0/zzz-0.1.0-x86_64-apple-darwin.tar.gz"
-      sha256 "30532c94e8c0f293d894d53b8f78da8c932270c8325a57d556d10b71767d8943"
+      url "https://github.com/CodeTease/zzz/releases/download/v0.2.0/zzz-0.2.0-x86_64-apple-darwin.tar.gz"
+      sha256 "a6a3f13a29a707ed7dbc56ca628d2fb30af5af96b7b1f9748d18ba1374730ca1"
     elsif Hardware::CPU.arm?
-      url "https://github.com/CodeTease/zzz/releases/download/v0.1.0/zzz-0.1.0-aarch64-apple-darwin.tar.gz"
-      sha256 "6e96a0ee200a8ad91285f71ca6422bd78dc3071babd59128f78caa7a41ee0ea5"
+      url "https://github.com/CodeTease/zzz/releases/download/v0.2.0/zzz-0.2.0-aarch64-apple-darwin.tar.gz"
+      sha256 "9edce9acff91eaf31308109d459a0a3f2eb74067ae1a2e89c79bda6c681cd587"
     end
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/CodeTease/zzz/releases/download/v0.1.0/zzz-0.1.0-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "ac73dba0b8cb32f82e0f7572ef1b12861f690b4aded16fcdeb0588c01735a8e6"
+      url "https://github.com/CodeTease/zzz/releases/download/v0.2.0/zzz-0.2.0-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "26bcbf3a749911d9ed84831f52ac8dfa39840f313056df09f4e80aa9d6c4f1b2"
     elsif Hardware::CPU.arm?
-      url "https://github.com/CodeTease/zzz/releases/download/v0.1.0/zzz-0.1.0-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "4f10da3532bf9af37eaabf2432b5fa56d25f565a85834b88f3883c4a99f85ada"
+      url "https://github.com/CodeTease/zzz/releases/download/v0.2.0/zzz-0.2.0-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "42d5bb60fcdff0bb59f83533c6cda8403822470050f8fc3ebcc0a0b63d69eda7"
     end
   end
 
